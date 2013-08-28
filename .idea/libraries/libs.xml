@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WhatToDo/libs/google-http-client-1.15.0-rc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WhatToDo/libs/gson-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WhatToDo/libs/google-oauth-client-1.15.0-rc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WhatToDo/libs/jsr305-1.3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WhatToDo/libs/google-http-client-android-1.15.0-rc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WhatToDo/libs/google-api-client-1.15.0-rc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WhatToDo/libs/google-api-services-tasks-v1-rev15-1.15.0-rc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WhatToDo/libs/google-play-services.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WhatToDo/libs/google-http-client-gson-1.15.0-rc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WhatToDo/libs/google-api-client-android-1.15.0-rc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

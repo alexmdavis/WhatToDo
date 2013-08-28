@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+    <LinearLayout
+            style="@style/TitleBar" >
+
+        <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/icon_desc"
+                android:src="@drawable/ic_launcher" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceMediumInverse"
+                android:layout_marginLeft="10dp"/>
+
+        <View
+                style="@style/TitleBarSpring" />
+
+        <ProgressBar
+                android:id="@+id/title_refresh_progress"
+                style="@style/TitleBarProgressIndicator"
+                android:visibility="gone" />
+
+        <ImageView
+                style="@style/TitleBarSeparator"
+                android:contentDescription="@string/title_separator_desc" />
+    </LinearLayout>
+
+    <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:id="@+id/text00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="I really ought to consider:"
+                android:layout_gravity="right"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                />
+
+        <TextView
+                android:id="@+id/space03"
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:background="#0c00a3"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_rowSpan="7"
+                />
+
+        <TextView
+                android:id="@+id/text_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="This is a test of the emergency broadcast system"
+                android:layout_gravity="left"
+                android:ellipsize="none"
+                android:minLines="4"
+                android:maxLines="4"
+                android:scrollHorizontally="false"
+                android:layout_row="0"
+                android:layout_column="4"/>
+
+        <TextView
+                android:id="@+id/space10"
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:background="#ffc61923"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_rowSpan="6"
+                />
+
+        <TextView
+                android:id="@+id/text10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="...and"
+                android:layout_gravity="right"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnSpan="2"
+                />
+
+        <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I did it!"
+                android:layout_gravity="left"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_row="1"
+                android:layout_column="4"/>
+
+        <TextView
+                android:id="@+id/text20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="...but I didn't, because"
+                android:layout_gravity="right"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_columnSpan="2"
+                />
+
+        <TextView
+                android:id="@+id/space31"
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:background="#ff1fc60a"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_rowSpan="4"
+                />
+
+        <TextView
+                android:id="@+id/text20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="...I want to"
+                android:layout_gravity="right"
+                android:layout_row="3"
+                android:layout_column="2"/>
+
+        <Button
+                android:id="@+id/button_pick"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:longClickable="false"
+                android:onClick="onMyButtonClick"
+                android:text="do something else."
+                android:layout_gravity="left"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_row="3"
+                android:layout_column="4"/>
+
+        <TextView
+                android:id="@+id/textView3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="...I'd rather do a different sort of thing, like"
+                android:layout_gravity="right"
+                android:layout_row="4"
+                android:layout_column="2"/>
+
+        <Spinner
+                android:id="@+id/spinner_lists"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinner_lists"
+                android:textAlignment="center"
+                android:layout_row="4"
+                android:layout_column="4"/>
+
+        <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:longClickable="false"
+                android:onClick="onMyButtonClick"
+                android:text="now."
+                android:layout_gravity="left"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_row="5"
+                android:layout_column="4"/>
+
+        <TextView
+                android:id="@+id/text60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="...but not now."
+                android:layout_gravity="right"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:layout_columnSpan="2"
+                />
+
+        <Button
+                android:id="@+id/button_pick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:longClickable="false"
+                android:onClick="onMyButtonClick"
+                android:text="Ciao!"
+                android:layout_gravity="left"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_row="6"
+                android:layout_column="4"/>
+
+    </GridLayout>
+
+
+</LinearLayout>
