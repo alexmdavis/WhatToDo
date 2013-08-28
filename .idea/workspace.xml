@@ -12,8 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c289532-fecd-46c7-99c3-dcaa5561288b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WhatToDo/res/drawable/border.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WhatToDo/res/layout/spinner_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java" afterPath="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java" afterPath="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhatToDo/res/layout/main.xml" afterPath="$PROJECT_DIR$/WhatToDo/res/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhatToDo/res/values/strings.xml" afterPath="$PROJECT_DIR$/WhatToDo/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WhatToDo.iws" />
@@ -81,13 +84,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WhatToDo/res/layout/main.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="44" selection-start="1646" selection-end="1646" vertical-scroll-proportion="0.45513865" vertical-offset="396" max-vertical-offset="7080">
+            <state line="204" column="0" selection-start="8396" selection-end="8396" vertical-scroll-proportion="-14.222222" vertical-offset="2676" max-vertical-offset="7335">
               <folding>
                 <element signature="e#606#625#0" expanded="true" />
                 <element signature="e#891#909#0" expanded="true" />
@@ -97,28 +100,94 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WhatToDo/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WhatToDo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="0" selection-start="4976" selection-end="4976" vertical-scroll-proportion="0.0" vertical-offset="2325" max-vertical-offset="3645">
+            <state line="159" column="39" selection-start="5501" selection-end="5501" vertical-scroll-proportion="0.0" vertical-offset="1081" max-vertical-offset="3870">
+              <folding>
+                <element signature="e#0#8810#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3006#3012#0" expanded="true" />
+                <element signature="e#3063#3071#0" expanded="true" />
+                <element signature="e#4907#5204#0" expanded="true" />
+                <element signature="e#5193#5194#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsyncLoadTasks.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="0" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.73778504" vertical-offset="477" max-vertical-offset="1095">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spinner_layout.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WhatToDo/res/layout/spinner_layout.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="-4.4444447" vertical-offset="0" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AsyncLoadTasks.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java">
+      <file leaf-file-name="Spinner.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/Spinner.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="35" selection-start="2901" selection-end="2901" vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="1410">
+            <state line="44" column="16" selection-start="1801" selection-end="1801" vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="1110">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbsSpinner.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/AbsSpinner.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdapterView.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/AdapterView.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="19" selection-start="4013" selection-end="4013" vertical-scroll-proportion="0.0" vertical-offset="1161" max-vertical-offset="1935">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsyncTask.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/AsyncTask.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="70" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/view/View.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="907" column="19" selection-start="40768" selection-end="40768" vertical-scroll-proportion="0.0" vertical-offset="13405" max-vertical-offset="17190">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayAdapter.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/ArrayAdapter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="15" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -145,12 +214,13 @@
         <option value="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/CommonAsyncTask.java" />
         <option value="$PROJECT_DIR$/WhatToDo/res/layout/calendarlist.xml" />
         <option value="$PROJECT_DIR$/WhatToDo/res/layout/listview_layout.xml" />
-        <option value="$PROJECT_DIR$/WhatToDo/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java" />
-        <option value="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java" />
         <option value="$PROJECT_DIR$/WhatToDo/res/drawable/border.xml" />
         <option value="$PROJECT_DIR$/WhatToDo/res/drawable/under1.xml" />
+        <option value="$PROJECT_DIR$/WhatToDo/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/WhatToDo/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/WhatToDo/res/layout/spinner_layout.xml" />
+        <option value="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java" />
+        <option value="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java" />
       </list>
     </option>
   </component>
@@ -618,16 +688,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1090" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19375" sideWeight="0.6713568" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19375" sideWeight="0.6" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964823" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.75677085" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21005026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -638,14 +709,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947916" sideWeight="0.6713568" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947916" sideWeight="0.6713568" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964823" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19497487" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -662,38 +732,12 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="71" selection-start="4729" selection-end="4729" vertical-scroll-proportion="0.0" vertical-offset="2145" max-vertical-offset="3630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="945" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="340" selection-end="340" vertical-scroll-proportion="0.6993569" vertical-offset="0" max-vertical-offset="622" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="39" selection-start="1561" selection-end="1561" vertical-scroll-proportion="-0.22065727" vertical-offset="531" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/res/drawable-mdpi/ic_mailboxes_accounts.png">
-      <provider selected="true" editor-type-id="images">
+    <entry file="file://$PROJECT_DIR$/WhatToDo/res/layout/listview_layout.xml">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/res/drawable/back.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
+        <state line="9" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
           <folding />
         </state>
       </provider>
@@ -705,45 +749,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/res/drawable-mdpi/ic_menu_refresh.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/res/layout/listview_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/WhatToDo/res/drawable/back.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.18467852" vertical-offset="0" max-vertical-offset="731">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/CommonAsyncTask.java">
+    <entry file="file://$PROJECT_DIR$/WhatToDo/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="34" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.019788919" vertical-offset="195" max-vertical-offset="1005">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WhatToDo/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+        <state line="30" column="0" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.703125" vertical-offset="0" max-vertical-offset="640">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java">
+    <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/CommonAsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="0" selection-start="4976" selection-end="4976" vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="3000">
+        <state line="32" column="34" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/Spinner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="35" selection-start="2901" selection-end="2901" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1095">
+        <state line="44" column="16" selection-start="1801" selection-end="1801" vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/AbsSpinner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/ArrayAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="15" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/view/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="907" column="19" selection-start="40768" selection-end="40768" vertical-scroll-proportion="0.0" vertical-offset="13405" max-vertical-offset="17190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/widget/AdapterView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="19" selection-start="4013" selection-end="4013" vertical-scroll-proportion="0.0" vertical-offset="1161" max-vertical-offset="1935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/AsyncTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="70" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WhatToDo/res/layout/spinner_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="-4.4444447" vertical-offset="0" max-vertical-offset="210">
           <folding />
         </state>
       </provider>
@@ -753,11 +834,34 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="44" selection-start="1646" selection-end="1646" vertical-scroll-proportion="0.45513865" vertical-offset="396" max-vertical-offset="7080">
+        <state line="204" column="0" selection-start="8396" selection-end="8396" vertical-scroll-proportion="-14.222222" vertical-offset="2676" max-vertical-offset="7335">
           <folding>
             <element signature="e#606#625#0" expanded="true" />
             <element signature="e#891#909#0" expanded="true" />
             <element signature="e#1400#1430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="39" selection-start="5501" selection-end="5501" vertical-scroll-proportion="0.0" vertical-offset="2011" max-vertical-offset="3870">
+          <folding>
+            <element signature="e#0#8810#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3006#3012#0" expanded="true" />
+            <element signature="e#3063#3071#0" expanded="true" />
+            <element signature="e#4907#5204#0" expanded="true" />
+            <element signature="e#5193#5194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.73778504" vertical-offset="477" max-vertical-offset="1095">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

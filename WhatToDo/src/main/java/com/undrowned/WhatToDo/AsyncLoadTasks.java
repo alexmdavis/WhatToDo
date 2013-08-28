@@ -43,12 +43,12 @@ class AsyncLoadTasks extends CommonAsyncTask {
         List<TaskList> tasklists =
                 client.tasklists().list().execute().getItems();
         if (tasklists != null) {
-            List<String> tasklistnames = new ArrayList<String>();
+            activity.tasklistnames.clear();
             for (TaskList tasklist : tasklists) {
                 String tasklisttitle = tasklist.getTitle();
 
                 // assemble tasklist titles
-                tasklistnames.add(tasklisttitle);
+                activity.tasklistnames.add(tasklisttitle);
 
                 // get Todo tasks
                 if (tasklisttitle.equals("Todo")) {
@@ -57,15 +57,6 @@ class AsyncLoadTasks extends CommonAsyncTask {
                 }
             }
 
-/*
-            Spinner spinner = (Spinner) activity.findViewById(R.id.spinner_lists);
-            ArrayAdapter<String> dataAdapter;
-            dataAdapter = new ArrayAdapter<String> (activity,
-                    android.R.layout.simple_spinner_dropdown_item, tasklistnames);
-            dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-            spinner.setAdapter(dataAdapter);
-            spinner.setSelection(tasklistnames.indexOf("Todo"));
-*/
         }
 //    tasks = client.tasks().list("@default").setFields("items/title").execute().getItems();
         if (tasks != null) {

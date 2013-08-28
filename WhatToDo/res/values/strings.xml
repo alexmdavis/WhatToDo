@@ -25,5 +25,6 @@
     <string name="button_pick">Pick again</string>
     <string-array name="spinner_lists">
         <item>Todo</item>
+        <item>Not Todo</item>
     </string-array>
 </resources>
