@@ -6,7 +6,8 @@
         android:orientation="vertical" >
 
     <LinearLayout
-            style="@style/TitleBar" >
+            style="@style/TitleBar"
+            android:background="#33B5E5">
 
         <ImageView
                 android:id="@+id/imageView1"
@@ -21,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="@string/app_name"
-                android:textAppearance="?android:attr/textAppearanceMediumInverse"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
                 android:layout_marginLeft="10dp"/>
 
         <View
@@ -44,6 +45,7 @@
         <TextView
                 android:id="@+id/text00"
                 android:layout_width="wrap_content"
+                android:maxWidth="140dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="I really ought to consider:"
@@ -55,24 +57,27 @@
 
         <TextView
                 android:id="@+id/space03"
-                android:layout_width="20dp"
+                android:layout_width="1dp"
                 android:layout_height="fill_parent"
-                android:background="#0c00a3"
+                android:background="#33B5E5"
                 android:layout_row="0"
                 android:layout_column="3"
                 android:layout_rowSpan="7"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 />
 
         <TextView
                 android:id="@+id/text_task"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:maxWidth="140dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="This is a test of the emergency broadcast system"
                 android:layout_gravity="left"
                 android:ellipsize="none"
                 android:minLines="4"
-                android:maxLines="4"
+                android:maxLines="8"
                 android:scrollHorizontally="false"
                 android:layout_row="0"
                 android:layout_column="4"/>
