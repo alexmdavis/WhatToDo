@@ -113,7 +113,7 @@ public final class WhatToDo extends Activity {
 
         tasklistSpinner = (Spinner) findViewById(R.id.spinner_lists);
         listsAdapter = new ArrayAdapter<String>(this, R.layout.spinner_layout, tasklistnames);
-        listsAdapter.setDropDownViewResource(R.layout.spinner_layout);
+        listsAdapter.setDropDownViewResource(R.layout.spinner_dropdown_layout);
         tasklistSpinner.setAdapter(listsAdapter);
 
         // Google Accounts

@@ -14,14 +14,10 @@
 
 package com.undrowned.WhatToDo;
 
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-
 import com.google.api.services.tasks.model.Task;
 import com.google.api.services.tasks.model.TaskList;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
