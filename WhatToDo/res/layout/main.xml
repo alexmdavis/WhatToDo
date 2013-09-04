@@ -233,7 +233,7 @@
                 android:id="@+id/button_pick"
                 android:layout_width="130dp"
                 android:longClickable="false"
-                android:onClick="onMyButtonClick"
+                android:onClick="onButtonClickElse"
                 android:text="do something else."
                 android:layout_gravity="left"
                 android:gravity="left"
@@ -266,7 +266,7 @@
         <Button
                 android:id="@+id/button_now"
                 android:longClickable="false"
-                android:onClick="onMyButtonClick"
+                android:onClick="onButtonClickElse"
                 android:text="now."
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="top"
@@ -294,7 +294,7 @@
                 android:layout_row="8"
                 android:layout_column="4"
                 android:layout_marginTop="20dp"
-                />
+            android:onClick="onButtonClickBye" />
 
     </GridLayout>
 

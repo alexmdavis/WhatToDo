@@ -47,7 +47,7 @@ class AsyncLoadTasks extends CommonAsyncTask {
                 activity.tasklistnames.add(tasklisttitle);
 
                 // get Todo tasks
-                if (tasklisttitle.equals("Todo")) {
+                if (tasklisttitle.equals(activity.tasklistSelectedText)) {
                     String id = tasklist.getId();
                     tasks = client.tasks().list(id).setFields("items/title").execute().getItems();
                 }
@@ -56,16 +56,10 @@ class AsyncLoadTasks extends CommonAsyncTask {
         }
 //    tasks = client.tasks().list("@default").setFields("items/title").execute().getItems();
         if (tasks != null) {
-//      for (Task task : tasks) {
-//        result.add(task.getTitle());
-//      }
             result = tasks.get(new Random().nextInt(tasks.size())).getTitle();
         } else {
             result = "Create a task list titled 'Todo'.";
         }
-//    List<String> firstResult = new ArrayList<String>();
-//    firstResult.add(result.get(1));
-//    activity.tasksList = firstResult;
         activity.taskText = result;
     }
 

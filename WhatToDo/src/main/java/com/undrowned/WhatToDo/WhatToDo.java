@@ -34,6 +34,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -84,6 +85,8 @@ public final class WhatToDo extends Activity {
 
     String taskText;
 
+    String tasklistSelectedText;
+
     ArrayAdapter<String> adapter;
 
     com.google.api.services.tasks.Tasks service;
@@ -111,10 +114,21 @@ public final class WhatToDo extends Activity {
         setContentView(R.layout.main);
         taskTextView = (TextView) findViewById(R.id.text_task);
 
+        // Set up task list spinner
         tasklistSpinner = (Spinner) findViewById(R.id.spinner_lists);
         listsAdapter = new ArrayAdapter<String>(this, R.layout.spinner_layout, tasklistnames);
         listsAdapter.setDropDownViewResource(R.layout.spinner_dropdown_layout);
         tasklistSpinner.setAdapter(listsAdapter);
+        tasklistSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+                tasklistSelectedText = listsAdapter.getItem(position);
+            }
+
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+        tasklistSelectedText = "Todo";
 
         // Google Accounts
         credential =
@@ -137,9 +151,18 @@ public final class WhatToDo extends Activity {
 //       }
     }
 
-    public void onMyButtonClick(View view)
+    public void onButtonClickElse(View view)
     {
         AsyncLoadTasks.run(this);
+    }
+
+    public void onButtonClickBye(View view)
+    {
+        // Not good Android practice to actually exit; run Home activity instead
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     void showGooglePlayServicesAvailabilityErrorDialog(final int connectionStatusCode) {
@@ -159,7 +182,7 @@ public final class WhatToDo extends Activity {
 //        listView.setAdapter(adapter);
         taskTextView.setText(taskText);
         listsAdapter.notifyDataSetChanged();
-        tasklistSpinner.setSelection(tasklistnames.indexOf("Todo"));
+        tasklistSpinner.setSelection(tasklistnames.indexOf(tasklistSelectedText));
     }
 
     @Override
