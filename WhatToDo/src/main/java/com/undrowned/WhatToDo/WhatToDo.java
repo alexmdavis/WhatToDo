@@ -154,9 +154,9 @@ public final class WhatToDo extends Activity {
     }
 
     void refreshView() {
-//      adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tasksList);
-//      adapter = new ArrayAdapter<String>(this, R.layout.listview_layout, tasksList);
-//      listView.setAdapter(adapter);
+//        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tasksList);
+//        adapter = new ArrayAdapter<String>(this, R.layout.listview_layout, tasksList);
+//        listView.setAdapter(adapter);
         taskTextView.setText(taskText);
         listsAdapter.notifyDataSetChanged();
         tasklistSpinner.setSelection(tasklistnames.indexOf("Todo"));

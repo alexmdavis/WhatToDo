@@ -61,7 +61,7 @@ class AsyncLoadTasks extends CommonAsyncTask {
 //      }
             result = tasks.get(new Random().nextInt(tasks.size())).getTitle();
         } else {
-            result = "No tasks.";
+            result = "Create a task list titled 'Todo'.";
         }
 //    List<String> firstResult = new ArrayList<String>();
 //    firstResult.add(result.get(1));

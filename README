@@ -1,1 +1,7 @@
-This file was created by Android Studio (I/O Preview) AI-130.716844 for binding GitHub repository
+Read me.
+
+TODO:
+
+- Redo layout, probably with nested LinearLayouts instead of GridLayout, for scaling to other sizes than 480x800 hdpi.
+- Start up with most recently used task list.
+- Fix other buttons
