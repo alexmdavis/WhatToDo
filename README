@@ -2,6 +2,7 @@ Read me.
 
 TODO:
 
+- Don't put my API key on Github
 - Filter out completed tasks
 - Tests
 - Fix GridLayout for scaling to other resolutions than 480x800 hdpi (via min/max sizes?)
