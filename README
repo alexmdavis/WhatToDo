@@ -1,14 +1,17 @@
-Read me.
+A random Google Task picker.
 
 TODO:
 
-- Don't put my API key on Github
 - Filter out completed tasks
+- Alternate texts; color schemes? (See https://developer.android.com/design/style/color.html)
+- Better resource practices: strings, colors, widget styles etc.
+- Don't put my API key on Github
 - Tests
-- Fix GridLayout for scaling to other resolutions than 480x800 hdpi (via min/max sizes?)
-- Start up with most recently used task list
+- Start up with most recently used task list (shared prefs...)
 - Deal with nested tasks
+- Fix GridLayout for scaling to other resolutions than 480x800 hdpi (via min/max sizes?)
 - Emulation test rig (bypass Google Services authentication)
+- Simpler / more current auth scheme? (See https://github.com/antonyt/Task-Master/)
 
 Quick ref:
 - API javadoc https://developers.google.com/resources/api-libraries/documentation/tasks/v1/java/latest/
