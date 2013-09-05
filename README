@@ -2,6 +2,12 @@ Read me.
 
 TODO:
 
-- Redo layout, probably with nested LinearLayouts instead of GridLayout, for scaling to other sizes than 480x800 hdpi.
-- Start up with most recently used task list.
-- Fix other buttons
+- Filter out completed tasks
+- Tests
+- Fix GridLayout for scaling to other resolutions than 480x800 hdpi (via min/max sizes?)
+- Start up with most recently used task list
+- Deal with nested tasks
+- Emulation test rig (bypass Google Services authentication)
+
+Quick ref:
+- API javadoc https://developers.google.com/resources/api-libraries/documentation/tasks/v1/java/latest/

@@ -34,7 +34,7 @@ class AsyncLoadTasks extends CommonAsyncTask {
 
     @Override
     protected void doInBackground() throws IOException {
-        String result;
+        Task result;
         List<Task> tasks = null;
         List<TaskList> tasklists =
                 client.tasklists().list().execute().getItems();
@@ -46,21 +46,23 @@ class AsyncLoadTasks extends CommonAsyncTask {
                 // assemble tasklist titles
                 activity.tasklistnames.add(tasklisttitle);
 
-                // get Todo tasks
-                if (tasklisttitle.equals(activity.tasklistSelectedText)) {
-                    String id = tasklist.getId();
-                    tasks = client.tasks().list(id).setFields("items/title").execute().getItems();
+                // get tasks
+                if (tasklisttitle.equals(activity.tasklistSpinnerSelectedText)) {
+                    activity.tasklist = tasklist;
+                    // TODO perhaps limit task fields retrieved
+                    tasks = client.tasks().list(tasklist.getId()).setFields("items").execute().getItems();
+//                    tasks = client.tasks().list(tasklist.getId()).setFields("items/title").execute().getItems();
                 }
             }
 
         }
 //    tasks = client.tasks().list("@default").setFields("items/title").execute().getItems();
         if (tasks != null) {
-            result = tasks.get(new Random().nextInt(tasks.size())).getTitle();
+            result = tasks.get(new Random().nextInt(tasks.size()));
         } else {
-            result = "Create a task list titled 'Todo'.";
+            result = null;
         }
-        activity.taskText = result;
+        activity.task = result;
     }
 
     static void run(com.undrowned.WhatToDo.WhatToDo whatToDo) {

@@ -13,22 +13,13 @@
  */
 package com.undrowned.WhatToDo;
 
-import com.google.android.gms.common.GooglePlayServicesUtil;
-import com.google.api.client.extensions.android.http.AndroidHttp;
-import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
-import com.google.api.client.http.HttpTransport;
-import com.google.api.client.json.JsonFactory;
-import com.google.api.client.json.gson.GsonFactory;
-import com.google.api.services.tasks.TasksRequestInitializer;
-import com.google.api.services.tasks.TasksScopes;
-import com.google.api.services.tasks.model.Task;
-
 import android.accounts.AccountManager;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -40,6 +31,32 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.api.client.extensions.android.http.AndroidHttp;
+import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
+import com.google.api.client.http.HttpTransport;
+import com.google.api.client.json.JsonFactory;
+import com.google.api.client.json.gson.GsonFactory;
+import com.google.api.client.util.DateTime;
+import com.google.api.services.tasks.TasksRequestInitializer;
+import com.google.api.services.tasks.TasksScopes;
+import com.google.api.services.tasks.model.Task;
+import com.google.api.services.tasks.model.TaskList;
+
+import org.apache.http.Header;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPut;
+import org.apache.http.client.params.HttpClientParams;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpParams;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -83,9 +100,11 @@ public final class WhatToDo extends Activity {
 
     GoogleAccountCredential credential;
 
-    String taskText;
+    Task task;
 
-    String tasklistSelectedText;
+    TaskList tasklist;
+
+    String tasklistSpinnerSelectedText;
 
     ArrayAdapter<String> adapter;
 
@@ -121,14 +140,14 @@ public final class WhatToDo extends Activity {
         tasklistSpinner.setAdapter(listsAdapter);
         tasklistSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
-                tasklistSelectedText = listsAdapter.getItem(position);
+                tasklistSpinnerSelectedText = listsAdapter.getItem(position);
             }
 
             public void onNothingSelected(AdapterView<?> adapterView) {
                 return;
             }
         });
-        tasklistSelectedText = "Todo";
+        tasklistSpinnerSelectedText = "Todo";
 
         // Google Accounts
         credential =
@@ -149,6 +168,35 @@ public final class WhatToDo extends Activity {
 //       } catch (IOException e) {
 ////           Log.e(ERROR_TAG, "fail to load tasks", e);
 //       }
+    }
+
+    public void onButtonClickDid(View view) throws IOException {
+        // TODO: integrate better with AsyncLoadTasks
+        new AsyncTask<Void, Void, Task>() {
+
+            @Override
+            protected com.google.api.services.tasks.model.Task doInBackground(Void... params) {
+                try {
+                    if (task != null) {
+                        DateTime date = new DateTime(System.currentTimeMillis(), 0);
+
+                        task.setStatus("completed");
+//                        task.setDue(date);
+                        return service.tasks().update(tasklist.getId(), task.getId(), task).execute();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(com.google.api.services.tasks.model.Task result) {
+                // TODO: handle task execute result
+            };
+
+        }.execute();
+        AsyncLoadTasks.run(this);
     }
 
     public void onButtonClickElse(View view)
@@ -177,12 +225,16 @@ public final class WhatToDo extends Activity {
     }
 
     void refreshView() {
-//        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tasksList);
-//        adapter = new ArrayAdapter<String>(this, R.layout.listview_layout, tasksList);
-//        listView.setAdapter(adapter);
-        taskTextView.setText(taskText);
+        String taskTitle;
+        if (task != null) {
+            taskTitle = task.getTitle();
+        } else {
+            taskTitle = "Create a task list titled 'Todo'.";
+        }
+        taskTextView.setText(taskTitle);
+
         listsAdapter.notifyDataSetChanged();
-        tasklistSpinner.setSelection(tasklistnames.indexOf(tasklistSelectedText));
+        tasklistSpinner.setSelection(tasklistnames.indexOf(tasklistSpinnerSelectedText));
     }
 
     @Override
