@@ -83,46 +83,31 @@ public final class WhatToDo extends Activity {
      * </pre>
      */
     private static final Level LOGGING_LEVEL = Level.OFF;
-
     private static final String PREF_ACCOUNT_NAME = "accountName";
-
     static final String TAG = "WhatToDo";
-
     static final int REQUEST_GOOGLE_PLAY_SERVICES = 0;
-
     static final int REQUEST_AUTHORIZATION = 1;
-
     static final int REQUEST_ACCOUNT_PICKER = 2;
 
     final HttpTransport transport = AndroidHttp.newCompatibleTransport();
-
     final JsonFactory jsonFactory = new GsonFactory();
-
     GoogleAccountCredential credential;
-
-    Task task;
-
-    TaskList tasklist;
-
-    String tasklistSpinnerSelectedText;
-
-    ArrayAdapter<String> adapter;
 
     com.google.api.services.tasks.Tasks service;
 
-    int numAsyncTasks;
-
     private TextView taskTextView;
-
     private Spinner tasklistSpinner;
-
-    List<Task> tasks = new ArrayList<Task>();
-
-    List<String> tasklistnames = new ArrayList<String>();
-
-    ArrayAdapter<String> listsAdapter;
-
+    private Spinner moodSpinner;
     Button button_pick;
+
+    Task task;
+    TaskList tasklist;
+    List<String> tasklistnames = new ArrayList<String>();
+    ArrayAdapter<String> listsAdapter;
+    String tasklistSpinnerSelectedText;
+    String mood;
+
+    int numAsyncTasks;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -133,8 +118,9 @@ public final class WhatToDo extends Activity {
         setContentView(R.layout.main);
         taskTextView = (TextView) findViewById(R.id.text_task);
 
-        // Set up task list spinner
+        // Set up spinners
         tasklistSpinner = (Spinner) findViewById(R.id.spinner_lists);
+        // TODO layout probably isn't working b/c there is no such constructor signature
         listsAdapter = new ArrayAdapter<String>(this, R.layout.spinner_layout, tasklistnames);
         listsAdapter.setDropDownViewResource(R.layout.spinner_dropdown_layout);
         tasklistSpinner.setAdapter(listsAdapter);
@@ -148,6 +134,19 @@ public final class WhatToDo extends Activity {
             }
         });
         tasklistSpinnerSelectedText = "Todo";
+
+        String[] moods = getResources().getStringArray(R.array.spinner_moods);
+        moodSpinner = (Spinner) findViewById(R.id.spinner_moods);
+        moodSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+                String mood = getResources().getStringArray(R.array.spinner_moods)[position];
+                // TODO something about changed mood
+            }
+
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
 
         // Google Accounts
         credential =
@@ -171,7 +170,7 @@ public final class WhatToDo extends Activity {
     }
 
     public void onButtonClickDid(View view) throws IOException {
-        // TODO: integrate better with AsyncLoadTasks
+        // TODO: integrate with AsyncLoadTasks
         new AsyncTask<Void, Void, Task>() {
 
             @Override

@@ -18,6 +18,7 @@ import com.google.api.services.tasks.model.Task;
 import com.google.api.services.tasks.model.TaskList;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -35,7 +36,7 @@ class AsyncLoadTasks extends CommonAsyncTask {
     @Override
     protected void doInBackground() throws IOException {
         Task result;
-        List<Task> tasks = null;
+        List<Task> tasks = new ArrayList<Task>();
         List<TaskList> tasklists =
                 client.tasklists().list().execute().getItems();
         if (tasklists != null) {
@@ -50,7 +51,10 @@ class AsyncLoadTasks extends CommonAsyncTask {
                 if (tasklisttitle.equals(activity.tasklistSpinnerSelectedText)) {
                     activity.tasklist = tasklist;
                     // TODO perhaps limit task fields retrieved
-                    tasks = client.tasks().list(tasklist.getId()).setFields("items").execute().getItems();
+//                    tasks = client.tasks().list(tasklist.getId()).setFields("items").execute().getItems();
+                    // Remove completed tasks. Would prefer to filter by lambda, but no Java 8 yet
+                    for (Task t : client.tasks().list(tasklist.getId()).setFields("items").execute().getItems())
+                        if (!t.getStatus().equals("completed")) tasks.add(t);
 //                    tasks = client.tasks().list(tasklist.getId()).setFields("items/title").execute().getItems();
                 }
             }
