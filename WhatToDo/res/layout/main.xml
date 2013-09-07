@@ -329,7 +329,8 @@
             android:layout_marginTop="20dp"
             android:onClick="onButtonClickBye" />
 
-<!--        <Space
+<!-- moved this mood stuff into title bar
+        <Space
             android:layout_width="1dp"
             android:layout_height="80dp"
             android:layout_row="9"
