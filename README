@@ -1,4 +1,4 @@
-A random Google Task picker.
+A random Google Task picker. Now with attitude!
 
 TODO:
 
@@ -7,22 +7,24 @@ NOW
 
 SOONER
 - Cleanup: Comments, licensing, TODOs
-- Don't put my API key on Github
-- Start up with most recently used task list (shared prefs...)
-- Make spinner text bigger
+- Github (don't include API key...)
 
 LATER
-- Tests
+- Unit tests
 - Exception handling
 - Lots of null (or other undesired) result checking
+- Start up with most recently used task list (shared prefs...)
+- Make spinner text bigger
 - Better resource practices: strings, colors, widget styles etc.
 - Deal with nested tasks
-- Fix GridLayout for scaling to other resolutions than 480x800 hdpi (via min/max sizes?)
+- Fix GridLayout for scaling to other resolutions/orientations than 480x800 hdpi portrait (see min/max sizes)
 - Emulation test rig (bypass Google Services authentication)
 - Simpler / more current auth scheme? (See https://github.com/antonyt/Task-Master/)
 - Add Maven/Gradle and ProGuard
 - Proper class member privacies
 - Random mood should change mood spinner selection?
+- Remove redundancy of 'ordinary' mood strings
+- probabilistic CFG mood strings
 
 Quick ref:
 - API javadoc https://developers.google.com/resources/api-libraries/documentation/tasks/v1/java/latest/

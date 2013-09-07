@@ -97,6 +97,7 @@ public final class WhatToDo extends Activity {
     ArrayAdapter<String> listsAdapter;
     String tasklistSpinnerSelectedText;
     Random rand = new Random();
+    String[] moods;
     int[] moodColors = new int[] {
             android.R.color.holo_blue_light,
             android.R.color.holo_purple,
@@ -167,6 +168,7 @@ public final class WhatToDo extends Activity {
                         .build();
 
         res = getResources();
+        moods = res.getStringArray(R.array.spinner_moods);
     }
 
     private void setMoodGradient(int viewID, int moodColor) {
@@ -178,7 +180,13 @@ public final class WhatToDo extends Activity {
         findViewById(viewID).setBackgroundColor(moodColor);
     }
 
+    private void setMoodText(int viewID, String text) {
+        ((TextView) findViewById(viewID)).setText(text);
+    }
+
     private void setMood(int moodIndex) {
+        // TODO rather than these hardcoded series, subclass the relevant views (and add custom fields where necessary)
+
         // set colors
         int moodColor = res.getColor(moodColors[moodIndex]);
         setMoodGradient(R.id.text_dividerV1, moodColor);
@@ -193,11 +201,23 @@ public final class WhatToDo extends Activity {
         setMoodBackground(R.id.text_colon6, moodColor);
         setMoodBackground(R.id.title_bar, moodColor);
 
-        ((TextView)findViewById(R.id.text_intro)).setText("Hello!");
+        // set texts
+        int moodStringsArrayID = res.getIdentifier("mood_" + moods[moodIndex], "array", getPackageName());
+        String[] moodStrings = res.getStringArray(moodStringsArrayID);
+        setMoodText(R.id.text_intro, moodStrings[0]);
+        setMoodText(R.id.text_and, moodStrings[1]);
+        setMoodText(R.id.button_did, moodStrings[2]);
+        setMoodText(R.id.text_didnt, moodStrings[3]);
+        setMoodText(R.id.text_else, moodStrings[4]);
+        setMoodText(R.id.button_pick, moodStrings[5]);
+        setMoodText(R.id.text_newlist, moodStrings[6]);
+        setMoodText(R.id.button_now, moodStrings[7]);
+        setMoodText(R.id.text_notnow, moodStrings[8]);
+        setMoodText(R.id.button_bye, moodStrings[9]);
     }
 
     public void onButtonClickDid(View view) throws IOException {
-        // TODO: integrate with AsyncLoadTasks
+        // TODO: rewrite in style of AsyncLoadTasks
         new AsyncTask<Void, Void, Task>() {
 
             @Override

@@ -30,4 +30,64 @@
         <item>angry</item>
         <item>random</item>
     </string-array>
+    <string-array name="mood_ordinary">
+        <item>I really ought to consider</item>
+        <item>...and</item>
+        <item>I did it!</item>
+        <item>...but I didn\'t, because</item>
+        <item>...I want to</item>
+        <item>do something else.</item>
+        <item>...I\'d rather do a different sort of thing, like</item>
+        <item>now.</item>
+        <item>...I don\'t feel like it.</item>
+        <item>Goodbye.</item>
+    </string-array>
+    <string-array name="mood_ambitious">
+        <item>I am immediately going to</item>
+        <item>...and</item>
+        <item>NAILED IT</item>
+        <item>...but I didn\'t, because</item>
+        <item>...I want to</item>
+        <item>do something else.</item>
+        <item>...I\'d rather do a different sort of thing, like</item>
+        <item>now.</item>
+        <item>...I\'m doing something else!</item>
+        <item>Goodbye.</item>
+    </string-array>
+    <string-array name="mood_guilty">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="mood_sluggish">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="mood_angry">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
 </resources>
