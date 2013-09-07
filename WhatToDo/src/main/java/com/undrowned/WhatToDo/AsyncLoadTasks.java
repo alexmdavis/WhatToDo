@@ -67,6 +67,7 @@ class AsyncLoadTasks extends CommonAsyncTask {
             result = null;
         }
         activity.task = result;
+        activity.init = Boolean.FALSE;
     }
 
     static void run(com.undrowned.WhatToDo.WhatToDo whatToDo) {

@@ -19,6 +19,8 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
@@ -43,20 +45,7 @@ import com.google.api.services.tasks.TasksScopes;
 import com.google.api.services.tasks.model.Task;
 import com.google.api.services.tasks.model.TaskList;
 
-import org.apache.http.Header;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPut;
-import org.apache.http.client.params.HttpClientParams;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.params.BasicHttpParams;
-import org.apache.http.params.HttpParams;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -109,6 +98,8 @@ public final class WhatToDo extends Activity {
 
     int numAsyncTasks;
 
+    Boolean init = Boolean.TRUE;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -141,6 +132,12 @@ public final class WhatToDo extends Activity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
                 String mood = getResources().getStringArray(R.array.spinner_moods)[position];
                 // TODO something about changed mood
+                if (!init) {
+                    // TODO use color resources
+                    // TODO iterate through all dividers and action bar
+                    ((GradientDrawable)findViewById(R.id.image_dividerH2).getBackground()).setColors(new int[]{ Color.parseColor("#F4F4F4"), getResources().getColor(android.R.color.holo_orange_light) });
+//                    colorBar.setBackgroundResource(R.drawable.gradient_red);
+                }
             }
 
             public void onNothingSelected(AdapterView<?> adapterView) {
