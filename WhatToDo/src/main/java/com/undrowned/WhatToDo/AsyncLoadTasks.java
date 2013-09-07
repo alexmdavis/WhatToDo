@@ -62,7 +62,7 @@ class AsyncLoadTasks extends CommonAsyncTask {
         }
 //    tasks = client.tasks().list("@default").setFields("items/title").execute().getItems();
         if (tasks != null) {
-            result = tasks.get(new Random().nextInt(tasks.size()));
+            result = tasks.get(activity.rand.nextInt(tasks.size()));
         } else {
             result = null;
         }

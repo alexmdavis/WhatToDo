@@ -22,6 +22,7 @@ LATER
 - Add Maven/Gradle and ProGuard
 - Lots of null (or other undesired) result checking
 - Proper class member privacies
+- Random mood should change mood spinner selection?
 
 Quick ref:
 - API javadoc https://developers.google.com/resources/api-libraries/documentation/tasks/v1/java/latest/

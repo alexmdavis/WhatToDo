@@ -19,7 +19,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
+import android.content.res.Resources;
 import android.graphics.drawable.GradientDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -49,6 +49,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -87,14 +88,22 @@ public final class WhatToDo extends Activity {
     private TextView taskTextView;
     private Spinner tasklistSpinner;
     private Spinner moodSpinner;
-    Button button_pick;
+    private Button button_pick;
+    private Resources res;
 
     Task task;
     TaskList tasklist;
     List<String> tasklistnames = new ArrayList<String>();
     ArrayAdapter<String> listsAdapter;
     String tasklistSpinnerSelectedText;
-    String mood;
+    Random rand = new Random();
+    int[] moodColors = new int[] {
+            android.R.color.holo_blue_light,
+            android.R.color.holo_purple,
+            android.R.color.holo_green_light,
+            android.R.color.holo_orange_light,
+            android.R.color.holo_red_light
+    };
 
     int numAsyncTasks;
 
@@ -134,9 +143,13 @@ public final class WhatToDo extends Activity {
                 // TODO something about changed mood
                 if (!init) {
                     // TODO use color resources
-                    // TODO iterate through all dividers and action bar
-                    ((GradientDrawable)findViewById(R.id.image_dividerH2).getBackground()).setColors(new int[]{ Color.parseColor("#F4F4F4"), getResources().getColor(android.R.color.holo_orange_light) });
-//                    colorBar.setBackgroundResource(R.drawable.gradient_red);
+                    if (!init) {
+                        if (position != 5) {
+                            setMood(position);
+                        } else {
+                            setMood(rand.nextInt(moodColors.length));
+                        }
+                    }
                 }
             }
 
@@ -157,7 +170,8 @@ public final class WhatToDo extends Activity {
                         .setTasksRequestInitializer(new TasksRequestInitializer("AIzaSyCmE_OqAeCCws5bErfP2c4WeW5B5KtuET0"))
                         .build();
 
-        button_pick = (Button) findViewById(R.id.button_pick);
+//        button_pick = (Button) findViewById(R.id.button_pick);
+        res = getResources();
 
 //    try {
 //           tasks = service.tasks().list("@default").execute().getItems();
@@ -166,6 +180,19 @@ public final class WhatToDo extends Activity {
 //       }
     }
 
+    private void setMoodGradient(int viewID, int moodColor) {
+        ((GradientDrawable)findViewById(viewID).getBackground()).setColors(
+                new int[]{res.getColor(R.color.gradient_light), moodColor});
+    }
+
+    private void setMood(int moodIndex) {
+        // TODO also actionbar and colons
+        int moodColor = res.getColor(moodColors[moodIndex]);
+        setMoodGradient(R.id.text_dividerV1, moodColor);
+        setMoodGradient(R.id.text_dividerV2, moodColor);
+        setMoodGradient(R.id.image_dividerH2, moodColor);
+        setMoodGradient(R.id.text_dividerH3, moodColor);
+    }
     public void onButtonClickDid(View view) throws IOException {
         // TODO: integrate with AsyncLoadTasks
         new AsyncTask<Void, Void, Task>() {
