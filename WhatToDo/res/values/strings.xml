@@ -23,71 +23,71 @@
     <string name="error">Error</string>
     <string name="error_format">[Error] %s</string>
     <string-array name="spinner_moods">
-        <item>ordinary</item>
+        <item>calm</item>
         <item>ambitious</item>
         <item>guilty</item>
         <item>sluggish</item>
         <item>angry</item>
         <item>random</item>
     </string-array>
-    <string-array name="mood_ordinary">
+    <string-array name="mood_calm">
         <item>I really ought to consider</item>
         <item>...and</item>
-        <item>I did it!</item>
+        <item>I did it.</item>
         <item>...but I didn\'t, because</item>
-        <item>...I want to</item>
+        <item>I want to</item>
         <item>do something else.</item>
-        <item>...I\'d rather do a different sort of thing, like</item>
+        <item>I\'d rather do a different sort of thing, like</item>
         <item>now.</item>
-        <item>...I don\'t feel like it.</item>
+        <item>I don\'t feel like it.</item>
         <item>Goodbye.</item>
     </string-array>
     <string-array name="mood_ambitious">
         <item>I am immediately going to</item>
         <item>...and</item>
         <item>NAILED IT</item>
-        <item>...but I didn\'t, because</item>
-        <item>...I want to</item>
-        <item>do something else.</item>
-        <item>...I\'d rather do a different sort of thing, like</item>
-        <item>now.</item>
-        <item>...I\'m doing something else!</item>
-        <item>Goodbye.</item>
+        <item>...but not yet, because</item>
+        <item>I must</item>
+        <item>get warmed up with another task!</item>
+        <item>more important tasks beckon, such as</item>
+        <item>Bring it on!</item>
+        <item>I have other priorities.</item>
+        <item>I shall return!</item>
     </string-array>
     <string-array name="mood_guilty">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>I really ought to have</item>
+        <item>...and somehow</item>
+        <item>at least THAT is done.</item>
+        <item>...but I just couldn\'t.</item>
+        <item>I guess I\'ll go</item>
+        <item>fail at something else.</item>
+        <item>Let\'s see, what else am I terrible at?</item>
+        <item>Sure, let\'s get it over with.</item>
+        <item>Oh, just forget it.</item>
+        <item>Farewell.</item>
     </string-array>
     <string-array name="mood_sluggish">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Hm. I suppose there\'s</item>
+        <item>...which at long last</item>
+        <item>is over.</item>
+        <item>...which isn\'t going to happen today.</item>
+        <item>If I\'m lucky, there won\'t be</item>
+        <item>anything else to do.</item>
+        <item>Maybe there\'s another sort of thing, like</item>
+        <item>I can do from bed.</item>
+        <item>What? Huh? I was nodding off.</item>
+        <item>ZZZZZZ</item>
     </string-array>
     <string-array name="mood_angry">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Fine. I suppose it\'s my job to</item>
+        <item>...are you happy now?</item>
+        <item>It\'s done. Correctly.</item>
+        <item>Well that\'s too freaking bad.</item>
+        <item>But do go on. What else?</item>
+        <item>I\'m all ears.</item>
+        <item>I suppose there are also a mess of</item>
+        <item>I\'ll have to handle as well.</item>
+        <item>WELL I\'M NOT YOUR SLAVE!</item>
+        <item>Sayonara, sucker!</item>
     </string-array>
 </resources>

@@ -14,10 +14,11 @@ LATER
 - Exception handling
 - Lots of null (or other undesired) result checking
 - Start up with most recently used task list (shared prefs...)
+- Use real ActionBar and action menu for moods, rather than spinner
 - Make spinner text bigger
-- Better resource practices: strings, colors, widget styles etc.
+- Better resource practices: strings, colors, widget styles (especially) etc.
 - Deal with nested tasks
-- Fix GridLayout for scaling to other resolutions/orientations than 480x800 hdpi portrait (see min/max sizes)
+- Fix GridLayout for scaling to other resolutions/orientations than 480x800 hdpi portrait. Layout is probably mostly sound but may need some min/max sizes added.
 - Emulation test rig (bypass Google Services authentication)
 - Simpler / more current auth scheme? (See https://github.com/antonyt/Task-Master/)
 - Add Maven/Gradle and ProGuard

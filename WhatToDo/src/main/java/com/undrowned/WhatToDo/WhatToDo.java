@@ -27,9 +27,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.GridLayout;
+import android.widget.GridView;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -99,11 +103,11 @@ public final class WhatToDo extends Activity {
     Random rand = new Random();
     String[] moods;
     int[] moodColors = new int[] {
-            android.R.color.holo_blue_light,
-            android.R.color.holo_purple,
-            android.R.color.holo_green_light,
-            android.R.color.holo_orange_light,
-            android.R.color.holo_red_light
+            android.R.color.holo_blue_light, // ordinary
+            android.R.color.holo_green_light, // ambitious
+            android.R.color.holo_purple, // guilty
+            android.R.color.holo_orange_light, // sluggish
+            android.R.color.holo_red_light // angry
     };
 
     int numAsyncTasks;
@@ -198,7 +202,7 @@ public final class WhatToDo extends Activity {
         setMoodBackground(R.id.text_colon3, moodColor);
         setMoodBackground(R.id.text_colon4, moodColor);
         setMoodBackground(R.id.text_colon5, moodColor);
-        setMoodBackground(R.id.text_colon6, moodColor);
+//        setMoodBackground(R.id.text_colon6, moodColor);
         setMoodBackground(R.id.title_bar, moodColor);
 
         // set texts
@@ -207,6 +211,9 @@ public final class WhatToDo extends Activity {
         setMoodText(R.id.text_intro, moodStrings[0]);
         setMoodText(R.id.text_and, moodStrings[1]);
         setMoodText(R.id.button_did, moodStrings[2]);
+        // TODO get button to shrink to new text when text wraps. (apparently the white trailing space on the first line is counted as content)
+        //findViewById(R.id.button_did).getLayoutParams().width = GridLayout.LayoutParams.WRAP_CONTENT;
+
         setMoodText(R.id.text_didnt, moodStrings[3]);
         setMoodText(R.id.text_else, moodStrings[4]);
         setMoodText(R.id.button_pick, moodStrings[5]);
