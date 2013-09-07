@@ -3,26 +3,27 @@ A random Google Task picker.
 TODO:
 
 NOW
-- Alternate texts; color schemes? (See https://developer.android.com/design/style/color.html)
+- Mood texts
 
 SOONER
-- Comments
+- Cleanup: Comments, licensing, TODOs
 - Don't put my API key on Github
 - Start up with most recently used task list (shared prefs...)
 - Make spinner text bigger
 
 LATER
-- Exception handling
-- Better resource practices: strings, colors, widget styles etc.
 - Tests
+- Exception handling
+- Lots of null (or other undesired) result checking
+- Better resource practices: strings, colors, widget styles etc.
 - Deal with nested tasks
 - Fix GridLayout for scaling to other resolutions than 480x800 hdpi (via min/max sizes?)
 - Emulation test rig (bypass Google Services authentication)
 - Simpler / more current auth scheme? (See https://github.com/antonyt/Task-Master/)
 - Add Maven/Gradle and ProGuard
-- Lots of null (or other undesired) result checking
 - Proper class member privacies
 - Random mood should change mood spinner selection?
 
 Quick ref:
 - API javadoc https://developers.google.com/resources/api-libraries/documentation/tasks/v1/java/latest/
+- Android color palette https://developer.android.com/design/style/color.html

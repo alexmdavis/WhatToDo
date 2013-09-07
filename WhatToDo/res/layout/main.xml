@@ -6,8 +6,10 @@
     android:orientation="vertical" >
 
     <LinearLayout
+        android:id="@+id/title_bar"
         style="@style/TitleBar"
-        android:background="#33B5E5">
+        android:background="#33B5E5"
+        >
 
         <ImageView
             android:id="@+id/imageView1"

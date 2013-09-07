@@ -133,22 +133,18 @@ public final class WhatToDo extends Activity {
                 return;
             }
         });
+        // TODO use saved value
         tasklistSpinnerSelectedText = "Todo";
 
-        String[] moods = getResources().getStringArray(R.array.spinner_moods);
         moodSpinner = (Spinner) findViewById(R.id.spinner_moods);
         moodSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
                 String mood = getResources().getStringArray(R.array.spinner_moods)[position];
-                // TODO something about changed mood
                 if (!init) {
-                    // TODO use color resources
-                    if (!init) {
-                        if (position != 5) {
-                            setMood(position);
-                        } else {
-                            setMood(rand.nextInt(moodColors.length));
-                        }
+                    if (position != 5) {
+                        setMood(position);
+                    } else {
+                        setMood(rand.nextInt(moodColors.length));
                     }
                 }
             }
@@ -170,14 +166,7 @@ public final class WhatToDo extends Activity {
                         .setTasksRequestInitializer(new TasksRequestInitializer("AIzaSyCmE_OqAeCCws5bErfP2c4WeW5B5KtuET0"))
                         .build();
 
-//        button_pick = (Button) findViewById(R.id.button_pick);
         res = getResources();
-
-//    try {
-//           tasks = service.tasks().list("@default").execute().getItems();
-//       } catch (IOException e) {
-////           Log.e(ERROR_TAG, "fail to load tasks", e);
-//       }
     }
 
     private void setMoodGradient(int viewID, int moodColor) {
@@ -185,14 +174,28 @@ public final class WhatToDo extends Activity {
                 new int[]{res.getColor(R.color.gradient_light), moodColor});
     }
 
+    private void setMoodBackground(int viewID, int moodColor) {
+        findViewById(viewID).setBackgroundColor(moodColor);
+    }
+
     private void setMood(int moodIndex) {
-        // TODO also actionbar and colons
+        // set colors
         int moodColor = res.getColor(moodColors[moodIndex]);
         setMoodGradient(R.id.text_dividerV1, moodColor);
         setMoodGradient(R.id.text_dividerV2, moodColor);
         setMoodGradient(R.id.image_dividerH2, moodColor);
         setMoodGradient(R.id.text_dividerH3, moodColor);
+        setMoodBackground(R.id.text_colon1, moodColor);
+        setMoodBackground(R.id.text_colon2, moodColor);
+        setMoodBackground(R.id.text_colon3, moodColor);
+        setMoodBackground(R.id.text_colon4, moodColor);
+        setMoodBackground(R.id.text_colon5, moodColor);
+        setMoodBackground(R.id.text_colon6, moodColor);
+        setMoodBackground(R.id.title_bar, moodColor);
+
+        ((TextView)findViewById(R.id.text_intro)).setText("Hello!");
     }
+
     public void onButtonClickDid(View view) throws IOException {
         // TODO: integrate with AsyncLoadTasks
         new AsyncTask<Void, Void, Task>() {
