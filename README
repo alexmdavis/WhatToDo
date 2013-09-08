@@ -24,6 +24,7 @@ TODO:
 - probabilistic mood string grammars!
 - gradient_blue drawable is probably unnecessary
 - Apache 2.0 license requires marking code changes. Probably I should just rewrite the reused stuff, most of which will be gone anyway after these TODO's.
+- Remove files from project (and ignore files in git) if not necessary
 
 Quick ref:
 - API javadoc https://developers.google.com/resources/api-libraries/documentation/tasks/v1/java/latest/
