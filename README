@@ -1,12 +1,10 @@
-A random Google Task picker. Now with attitude!
+A random Google Task picker. Now with extra attitude!
 
-OAuth2, logging, and some AsyncTask code from https://code.google.com/p/google-api-java-client/source/browse/tasks-android-sample/?repo=samples
+Google API access depends on a key in string resource R.id.google_api_key, not included in this repository. (Use an xml file in res/values.)
+
+OAuth (2.0), logging, and some AsyncTask code from Google Task API sample (see quick ref below)
 
 TODO:
-
-SOONER
-- Cleanup: Comments
-- Github (don't include API key...)
 
 - Lots of null (or other undesired) result checking
 - Exception handling
@@ -30,3 +28,4 @@ SOONER
 Quick ref:
 - API javadoc https://developers.google.com/resources/api-libraries/documentation/tasks/v1/java/latest/
 - Android color palette https://developer.android.com/design/style/color.html
+- Google Task API sample https://code.google.com/p/google-api-java-client/source/browse/tasks-android-sample/?repo=samples

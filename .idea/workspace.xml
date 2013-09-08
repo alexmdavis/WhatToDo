@@ -24,16 +24,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c289532-fecd-46c7-99c3-dcaa5561288b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WhatToDo/instructions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/description" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java" afterPath="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java" afterPath="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhatToDo/res/values/colors.xml" afterPath="$PROJECT_DIR$/WhatToDo/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhatToDo/res/layout/listview_layout.xml" afterPath="$PROJECT_DIR$/WhatToDo/res/layout/listview_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhatToDo/res/layout/main.xml" afterPath="$PROJECT_DIR$/WhatToDo/res/layout/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhatToDo/res/values/strings.xml" afterPath="$PROJECT_DIR$/WhatToDo/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WhatToDo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,45 +100,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="43" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+            <state line="3" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.07042254" vertical-offset="0" max-vertical-offset="639">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WhatToDo.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="WhatToDo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="3" selection-start="648" selection-end="648" vertical-scroll-proportion="0.3286385" vertical-offset="0" max-vertical-offset="5730">
+            <state line="143" column="0" selection-start="5477" selection-end="5477" vertical-scroll-proportion="0.0" vertical-offset="1942" max-vertical-offset="6150">
               <folding>
-                <element signature="e#0#14486#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#3417#3425#0" expanded="true" />
+                <element signature="e#2094#2102#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="colors.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WhatToDo/res/values/colors.xml">
+      <file leaf-file-name="keys.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WhatToDo/res/values/keys.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="638" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+            <state line="0" column="0" selection-start="0" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AsyncLoadTasks.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="1245">
-              <folding>
-                <element signature="e#0#2812#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -167,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/WhatToDo/res/layout/calendarlist.xml" />
         <option value="$PROJECT_DIR$/WhatToDo/res/drawable/border.xml" />
         <option value="$PROJECT_DIR$/WhatToDo/res/drawable/under1.xml" />
         <option value="$PROJECT_DIR$/WhatToDo/res/layout/spinner_layout.xml" />
@@ -178,11 +158,12 @@
         <option value="$PROJECT_DIR$/WhatToDo/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/WhatToDo/res/layout/listview_layout.xml" />
         <option value="$PROJECT_DIR$/WhatToDo/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/WhatToDo/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/WhatToDo/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java" />
         <option value="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java" />
+        <option value="$PROJECT_DIR$/WhatToDo/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/WhatToDo/res/values/keys.xml" />
+        <option value="$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java" />
       </list>
     </option>
   </component>
@@ -357,7 +338,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="project.propCompiler" />
+    <property name="options.lastSelected" value="editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -584,7 +565,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886598" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25213677" sideWeight="0.6701031" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25213677" sideWeight="0.671134" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946581" sideWeight="0.7010309" order="0" side_tool="false" content_ui="combo" />
@@ -614,34 +595,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WhatToDo/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="593" selection-end="593" vertical-scroll-proportion="0.3220859" vertical-offset="0" max-vertical-offset="652">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/proguard-project.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="0.4601227" vertical-offset="0" max-vertical-offset="652">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/proguard-google-api-client.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.43711656" vertical-offset="0" max-vertical-offset="652">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/lint.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="652">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WhatToDo/WhatToDo.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="652">
@@ -684,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.2530675" vertical-offset="0" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/CommonAsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.39110428" vertical-offset="0" max-vertical-offset="1005">
@@ -698,38 +644,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WhatToDo/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="27" selection-start="438" selection-end="438" vertical-scroll-proportion="0.28892455" vertical-offset="15" max-vertical-offset="1545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WhatToDo/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WhatToDo/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="623">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WhatToDo/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="638" selection-end="694" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+        <state line="24" column="0" selection-start="924" selection-end="924" vertical-scroll-proportion="0.5778491" vertical-offset="0" max-vertical-offset="623">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/AsyncLoadTasks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="1245">
+        <state line="8" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="0.19261637" vertical-offset="0" max-vertical-offset="1260">
           <folding>
-            <element signature="e#0#2812#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="43" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+        <state line="16" column="0" selection-start="626" selection-end="626" vertical-scroll-proportion="0.38523275" vertical-offset="0" max-vertical-offset="1455">
+          <folding>
+            <element signature="e#0#3079#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WhatToDo/res/values/keys.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WhatToDo/src/main/java/com/undrowned/WhatToDo/WhatToDo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="3" selection-start="648" selection-end="648" vertical-scroll-proportion="0.3286385" vertical-offset="0" max-vertical-offset="5730">
+        <state line="143" column="0" selection-start="5477" selection-end="5477" vertical-scroll-proportion="0.0" vertical-offset="1942" max-vertical-offset="6150">
           <folding>
-            <element signature="e#0#14486#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#3417#3425#0" expanded="true" />
+            <element signature="e#2094#2102#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.07042254" vertical-offset="0" max-vertical-offset="639">
+          <folding />
         </state>
       </provider>
     </entry>
