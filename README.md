@@ -2,6 +2,8 @@ A random Google Task picker. Now with extra attitude!
 
 ![ScreenShot](https://raw.github.com/alexmdavis/WhatToDo/screenshots/WhatToDo-shot1.png) . ![ScreenShot](https://raw.github.com/alexmdavis/WhatToDo/screenshots/WhatToDo-shot2.png)
 
+(Note to designers: I mean the actual physical gutters on my house.)
+
 Google API access depends on a key in string resource R.id.google_api_key, not included in this repository. (Use an xml file in res/values.)
 
 OAuth (2.0), logging, and some AsyncTask code from Google Task API sample (see quick ref below)
