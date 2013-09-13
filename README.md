@@ -19,7 +19,7 @@ TODO:
 - Make spinner text bigger (selected value, and value list)
 - Better resource practices: strings, colors, widget styles (especially) etc.
 - Deal with nested tasks
-- Scale to other resolutions/orientations than 480x800 hdpi portrait. Current GridLayout is probably mostly sound but may need some min/max sizes added.
+- Scale to other resolutions/orientations than 320x480 160dpi hdpi portrait. Current GridLayout is theoretically mostly sound but may need some min/max sizes added. Font sizes are a problem.
 - Emulation test rig (bypass Google Services authentication)
 - Simpler / more current auth scheme? (See https://github.com/antonyt/Task-Master/)
 - Add Maven/Gradle and ProGuard
