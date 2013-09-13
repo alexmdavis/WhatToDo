@@ -10,7 +10,7 @@ OAuth (2.0), logging, and some AsyncTask code from Google Task API sample (see q
 
 TODO:
 
-- Scaling to other resolutions is no go. Tested only on my phone (320x480 160dpi) portrait. (Android Studio emulations are currently a bit spotty.) Current GridLayout is theoretically mostly sound, but maybe reversion to nested LinearLayouts is required. May need some min/max sizes need to be added. Font sizes are also a problem.
+- Scaling to other resolutions is no go. Tested only on my phone (320x480 160dpi) portrait. (Android Studio emulations are currently a bit spotty.) Current GridLayout is theoretically mostly sound, but maybe reversion to nested LinearLayouts is required. May need some min/max sizes added. Font sizes are also a problem.
 - Lots of null (or other undesired) result checking
 - Exception handling
 - Unit tests
